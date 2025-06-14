@@ -29,6 +29,34 @@ const projects = [
     demoUrl: "https://faq-apps.vercel.app/",
     githubUrl: "https://github.com/rana1365/faq-apps",
   },
+  {
+    id: 4,
+    title: "E-commerce application",
+    description: `An application built with Laravel and React combines Laravels robust backend capabilities, such as routing, authentication, and database management, with Reacts dynamic and responsive user interface for a seamless shopping experience. This tech stack allows for efficient API-driven development, making the application scalable, maintainable, and user-friendly.`,
+    image: "/projects/ecommerce.png",
+    tags: ["Laravel", "React", "Bootstrap"],
+    demoUrl: "https://ecommerce-six-pied-25.vercel.app/",
+    githubUrl: "https://github.com/rana1365/frontend",
+  },
+  {
+    id: 5,
+    title: "Order Management Apps",
+    description: `Find answers to the most common questions of an application.
+    It helps to remove pressure of the feedback team and improves the further development. `,
+    image: "/projects/dine-out.png",
+    tags: ["React", "TailwindCSS", "HTML"],
+    demoUrl: "https://assignment-02-kappa.vercel.app/",
+    githubUrl: "https://github.com/rana1365/assignment-02",
+  },
+  {
+    id: 6,
+    title: "Agency Landing Page",
+    description: `This free and open-source landing page template was built using the utility classes fromTailwind CSS and based on the components from the Flowbite Library and the Blocks System.`,
+    image: "/projects/agency-landing.png",
+    tags: ["React", "TailwindCSS", "HTML"],
+    demoUrl: "https://assignment-01-wine.vercel.app/",
+    githubUrl: "https://github.com/rana1365/assignment-01",
+  },
 ];
 
 const ProjectSection = () => {
