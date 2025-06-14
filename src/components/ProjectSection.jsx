@@ -32,7 +32,7 @@ const projects = [
   {
     id: 4,
     title: "E-commerce application",
-    description: `An application built with Laravel and React combines Laravels robust backend capabilities, such as routing, authentication, and database management, with Reacts dynamic and responsive user interface for a seamless shopping experience. This tech stack allows for efficient API-driven development, making the application scalable, maintainable, and user-friendly.`,
+    description: `An application built with Laravel and React combines Laravels robust backend capabilities, such as routing, authentication, and database management, with Reacts dynamic and responsive user interface for a seamless shopping experience.`,
     image: "/projects/ecommerce.png",
     tags: ["Laravel", "React", "Bootstrap"],
     demoUrl: "https://ecommerce-six-pied-25.vercel.app/",
