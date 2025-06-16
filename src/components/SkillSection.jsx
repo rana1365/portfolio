@@ -2,26 +2,26 @@ import { cn } from "@/lib/utils";
 import { useState } from "react";
 const skills = [
   // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 80, category: "frontend" },
-  { name: "JSON/AJAX", level: 85, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next.js", level: 80, category: "frontend" },
+  { name: "HTML/CSS", category: "frontend" },
+  { name: "JavaScript", category: "frontend" },
+  { name: "React", category: "frontend" },
+  { name: "Tailwind CSS", category: "frontend" },
+  { name: "Next.js", category: "frontend" },
+  { name: "JSON/AJAX", category: "frontend" },
 
   // Backend
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "PHP", level: 75, category: "backend" },
-  { name: "Laravel", level: 70, category: "backend" },
-  { name: "MySQL", level: 80, category: "backend" },
-  { name: "SqLite", level: 75, category: "backend" },
+  { name: "Node.js", category: "backend" },
+  { name: "PHP", category: "backend" },
+  { name: "Laravel", category: "backend" },
+  { name: "MySQL", category: "backend" },
+  { name: "SqLite", category: "backend" },
 
   // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "Postman", level: 85, category: "tools" },
-  { name: "Thunder-client", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
+  { name: "Git/GitHub", category: "tools" },
+  { name: "Docker", category: "tools" },
+  { name: "Postman", category: "tools" },
+  { name: "Thunder-client", category: "tools" },
+  { name: "VS Code", category: "tools" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
@@ -61,21 +61,10 @@ const SkillSection = () => {
           {filteredSkills.map((skill, key) => (
             <div
               key={key}
-              className="bg-card p-6 rounded-lg shadow-xs card-hover"
+              className="bg-card p-5 rounded-lg shadow-xs card-hover"
             >
-              <div className="text-left mb-4">
+              <div className="text-center mb-3">
                 <h3 className="font-semibold text-lg"> {skill.name}</h3>
-              </div>
-              <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                <div
-                  className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out"
-                  style={{ width: skill.level + "%" }}
-                />
-              </div>
-              <div className="text-right mt-1">
-                <span className="text-sm text-muted-foreground">
-                  {skill.level}%
-                </span>
               </div>
             </div>
           ))}
